@@ -1,1 +1,1 @@
-hi this is my portfoliuo
+Deployed link = https://tanishq-mehta-portfolio.onrender.com/
