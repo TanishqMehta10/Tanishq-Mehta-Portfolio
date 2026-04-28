@@ -17,9 +17,10 @@ const Projects: React.FC = () => {
     gradient: string;
     link?: string;
     github?: string;
+    alwaysShowLinks?: boolean;
   };
 
-  const projects: Project[] = [   
+  const projects: Project[] = [
     {
       title: "Smart Tourist Safety & Emergency Response System",
       description: "A safety and emergency response platform for tourists that detects incidents and coordinates immediate rescue efforts.",
@@ -32,11 +33,12 @@ const Projects: React.FC = () => {
       alwaysShowLinks: true
     },
     {
-      title: "ML-Based Rock Paper Scissors Game",
-      description: "An interactive AI-powered game that uses a machine learning model to recognize hand gestures and predict your next move for a fun, intelligent gameplay experience.",
-      image: "", // thematic ML + gaming style image
-      tech: ["Python", "OpenCV", "TensorFlow", "NumPy"],
-      gradient: "from-indigo-600 to-blue-500",
+      title: "Smart Surveillance System for Exam Integrity",
+      description: "An AI-powered system that detects cheating during exams by spotting suspicious actions and banned items, and sends alerts with proof directly to the invigilator.",
+      image: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800",
+      tech: ["Python", "OpenCV", "YOLOv8", "Flask", "dlib"],
+      gradient: "from-blue-600 to-cyan-500",
+      github: "https://github.com/TanishqMehta10/Smart_Exam_Surveillance"
     }
 
   ];
@@ -70,11 +72,11 @@ const Projects: React.FC = () => {
             >
               <motion.div
                 className="relative bg-gray-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-gray-700/50 hover:border-purple-500/50 transition-all duration-500 transform-gpu perspective-1000"
-                whileHover={{ 
-                  y: -10, 
+                whileHover={{
+                  y: -10,
                   rotateX: 5,
                   rotateY: 5,
-                  z: 50 
+                  z: 50
                 }}
                 style={{ transformStyle: 'preserve-3d' }}
               >
@@ -92,7 +94,7 @@ const Projects: React.FC = () => {
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 0.7 }}
                   />
-                  
+
                   {/* Project Links */}
                   <motion.div
                     className={project.alwaysShowLinks ? "absolute top-4 right-4 flex gap-2" : "absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"}
@@ -134,7 +136,7 @@ const Projects: React.FC = () => {
                   >
                     {project.title}
                   </motion.h3>
-                  
+
                   <p className="text-gray-400 mb-4 text-sm leading-relaxed">
                     {project.description}
                   </p>

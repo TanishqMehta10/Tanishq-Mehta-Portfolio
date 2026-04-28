@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Background3D from './components/Background3D';
 import CursorAnimation from './components/CursorAnimation';
+import RetroHome from './components/RetroHome';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Background3D />
       <CursorAnimation />
       <Navigation />
+      <RetroHome />
         <About />
       <Skills />
       <Projects />
