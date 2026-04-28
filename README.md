@@ -1,1 +1,1 @@
-Deployed link = https://tanishq-mehta-portfolio.onrender.com/
+Deployed link = https://resqnow-fast.vercel.app/
