@@ -42,11 +42,6 @@ const ChatBot: React.FC = () => {
         title: 'Smart Tourist Safety & Emergency Response System',
         description: 'A safety and emergency response platform for tourists that detects incidents and coordinates immediate rescue efforts.',
         tech: ['React', 'Tailwind CSS', 'MySQL', 'Ethereum', 'Node.js']
-      },
-      {
-        title: 'Smart Surveillance System for Exam Integrity',
-        description: 'AI-powered system that detects cheating during exams by spotting suspicious actions and banned items.',
-        tech: ['Python', 'OpenCV', 'YOLOv8', 'Flask', 'dlib']
       }
     ],
     skills: {
@@ -126,7 +121,7 @@ const ChatBot: React.FC = () => {
 
     // Projects
     if (message.includes('project')) {
-      return `Tanishq has worked on several amazing projects:\n\n1. **Stock Trading Decision System** - AI-driven trading using Q-Learning\n2. **Multimodal Fake Media Detection** - Deepfake detection with AI\n3. **Smart Tourist Safety System** - Emergency response platform with blockchain\n4. **Exam Surveillance System** - AI-powered cheating detection\n\nWould you like more details about any specific project?`;
+      return `Tanishq has worked on several amazing projects:\n\n1. **Stock Trading Decision System** - AI-driven trading using Q-Learning\n2. **Multimodal Fake Media Detection** - Deepfake detection with AI\n3. **Smart Tourist Safety System** - Emergency response platform with blockchain\n\nWould you like more details about any specific project?`;
     }
 
     // Skills
@@ -162,11 +157,6 @@ const ChatBot: React.FC = () => {
     // ResQNow Project
     if (message.includes('tourist') || message.includes('safety') || message.includes('rescue') || message.includes('resqnow')) {
       return `**Smart Tourist Safety & Emergency Response System** 🏔️\n\nA comprehensive platform for detecting incidents and coordinating immediate rescue efforts for tourists.\n\n**Tech:** React, Tailwind CSS, MySQL, Ethereum (blockchain), Node.js\n**Features:** Real-time incident detection, location tracking, rescue team coordination, blockchain verification\n\n🔗 Live: resqnow-fast.vercel.app/`;
-    }
-
-    // Exam Surveillance Project
-    if (message.includes('exam') || message.includes('surveillance') || message.includes('cheating')) {
-      return `**Smart Surveillance System for Exam Integrity** 📹\n\nAI-powered system that detects cheating by spotting suspicious actions and banned items.\n\n**Tech:** Python, OpenCV, YOLOv8, Flask, dlib\n**Features:** Real-time detection, instant alerts to invigilators, proof-based evidence\n\nThis system helps maintain exam integrity and fairness!`;
     }
 
     // About Tanishq

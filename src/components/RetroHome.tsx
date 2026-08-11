@@ -162,13 +162,6 @@ const RetroHome: React.FC = () => {
                 <p className="text-gray-500 text-xs">Emergency response & immediate rescue</p>
               </div>
             </div>
-            <div className="flex items-start gap-3 group">
-              <CheckSquare className="text-cyan-400 shrink-0 mt-0.5 group-hover:scale-110 transition-transform shadow-cyan-400/50 drop-shadow-md" size={16} />
-              <div onClick={() => window.open('https://github.com/TanishqMehta10/Smart_Exam_Surveillance', '_blank')}>
-                <p className="text-purple-300 font-semibold mb-1 hover:text-cyan-200 cursor-pointer">Smart Exam Surveillance</p>
-                <p className="text-gray-500 text-xs">Real-time CV cheat detection & alerts</p>
-              </div>
-            </div>
             <div className="mt-4 pt-4 border-t border-white/10 text-cyan-400 animate-pulse">
               <span className="text-pink-500">&gt;</span> Drag windows to interact_
             </div>

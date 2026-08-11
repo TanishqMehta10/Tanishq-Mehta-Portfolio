@@ -22,6 +22,16 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
+      title: "FlowMind Forms",
+      description: "An AI-powered low-code workflow automation platform that generates intelligent forms from natural-language prompts, automates approval workflows, and provides AI-powered form analysis with multilingual support.",
+      image: "/FlowMind.png",
+      tech: ["React", "Tailwind CSS", "FastAPI", "Grok API", "Firebase", "React i18next", "IndicTrans"],
+      gradient: "from-violet-600 to-fuchsia-500",
+      link: "https://flowmind-forms.web.app/",
+      github: "https://github.com/TanishqMehta10/FlowMind-forms",
+      alwaysShowLinks: true
+    },
+    {
       title: "AI-Based Stock Trading Decision System",
       description: "An intelligent stock trading system using Q-Learning reinforcement learning to make optimal trading decisions based on real-time market data analysis.",
       image: "/Stock.png",
@@ -39,15 +49,6 @@ const Projects: React.FC = () => {
       gradient: "from-purple-600 to-pink-600",
       link: "https://resqnow-fast.vercel.app/",
       github: "https://github.com/TanishqMehta10",
-      alwaysShowLinks: true
-    },
-    {
-      title: "Smart Surveillance System for Exam Integrity",
-      description: "An AI-powered system that detects cheating during exams by spotting suspicious actions and banned items, and sends alerts with proof directly to the invigilator.",
-      image: "/Exam srv.png",
-      tech: ["Python", "OpenCV", "YOLOv8", "Flask", "dlib"],
-      gradient: "from-blue-600 to-cyan-500",
-      github: "https://github.com/TanishqMehta10/Smart_Exam_Surveillance",
       alwaysShowLinks: true
     }
 
