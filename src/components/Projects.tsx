@@ -32,6 +32,15 @@ const Projects: React.FC = () => {
       alwaysShowLinks: true
     },
     {
+      title: "DesertVision AI",
+      description: "DesertVision — Safe Route Planning & Real-Time Navigation Simulation system.",
+      image: "/DesertVision Rover Mission Dashboard.png",
+      tech: ["Python", "FastAPI", "React", "CesiumJS", "Leaflet", "WebSockets", "AD* / D* Lite", "DWA", "OpenStreetMap"],
+      gradient: "from-blue-500 to-violet-500",
+      github: "https://github.com/TanishqMehta10",
+      alwaysShowLinks: true
+    },
+    {
       title: "AI-Based Stock Trading Decision System",
       description: "An intelligent stock trading system using Q-Learning reinforcement learning to make optimal trading decisions based on real-time market data analysis.",
       image: "/Stock.png",
